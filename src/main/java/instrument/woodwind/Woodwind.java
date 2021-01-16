@@ -4,16 +4,16 @@ import instrument.Instrument;
 
 public abstract class Woodwind extends Instrument {
 
-    private String name;
+    private int numberOfFingerHoles;
 
 
-    public Woodwind(String material, String colour, String type, String name) {
+    public Woodwind(String material, String colour, String type, int numberOfFingerHoles) {
         super(material, colour, type);
-        this.name = name;
+        this.numberOfFingerHoles = numberOfFingerHoles;
     }
 
-    public String getName() {
-        return name;
+    public int getnumberOfFingerHoles() {
+        return numberOfFingerHoles;
     }
 
 

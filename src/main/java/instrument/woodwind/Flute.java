@@ -1,8 +1,8 @@
 package instrument.woodwind;
 
 public class Flute extends Woodwind {
-    public Flute(String material, String colour, String type, String name) {
-        super(material, colour, type, name);
+    public Flute(String material, String colour, String type, int numberOfFingerHoles) {
+        super(material, colour, type, numberOfFingerHoles);
     }
 
 

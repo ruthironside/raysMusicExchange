@@ -4,14 +4,14 @@ import instrument.Instrument;
 
 public abstract class Brass extends Instrument {
 
-    private String name;
+    private int numberOfValves;
 
-    public Brass(String material, String colour, String type) {
+    public Brass(String material, String colour, String type, int numberOfValves) {
         super(material, colour, type);
-        this.name = name;
+        this.numberOfValves = numberOfValves;
     }
 
-    public String getName() {
-        return name;
+    public int getNumberOfValves() {
+        return numberOfValves;
     }
 }

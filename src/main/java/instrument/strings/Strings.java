@@ -6,14 +6,14 @@ import instrument.Instrument;
 public abstract class Strings extends Instrument {
 
 
-    private String name;
+    private int numberOfStrings;
 
-    public Strings(String material, String colour, String type) {
+    public Strings(String material, String colour, String type, int numberOfStrings) {
         super(material, colour, type);
-        this.name = name;
+        this.numberOfStrings = numberOfStrings;
     }
 
-    public String getName() {
-        return name;
+    public int getNumberOfStrings() {
+        return numberOfStrings;
     }
 }
