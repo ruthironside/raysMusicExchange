@@ -1,5 +1,4 @@
 import instrument.brass.Tuba;
-import instrument.woodwind.Clarinet;
 import org.junit.Before;
 import org.junit.Test;
 
