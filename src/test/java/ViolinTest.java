@@ -40,6 +40,25 @@ public class ViolinTest {
     public void canPlay() {
         assertEquals("playing: faaaa", violin.playInstrument("faaaa"));
     }
+
+    @Test
+    public void canSetSellingPrice() {
+        violin.setSellingPrice(300);
+        assertEquals(300, violin.getSellingPrice(), 0.01);
+    }
+
+    @Test
+    public void canSetBuyingPrice() {
+        violin.setBuyingPrice(50);
+        assertEquals(50, violin.getBuyingPrice(), 0.01);
+    }
+
+    @Test
+    public void testCalculateMarkup() {
+        violin.setBuyingPrice(50);
+        violin.setSellingPrice(300);
+        assertEquals(250, violin.calculateMarkup(), 0.01);
+    }
 }
 
 

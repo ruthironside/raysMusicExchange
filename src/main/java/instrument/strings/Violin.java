@@ -1,7 +1,9 @@
 package instrument.strings;
 
 
-public class Violin extends Strings {
+import behaviours.ISell;
+
+public class Violin extends Strings implements ISell {
 
 
     public Violin(String material, String colour, String type, int numberOfStrings) {
@@ -12,4 +14,7 @@ public class Violin extends Strings {
         return playTune(play);
     }
 
+    public double calculateMarkup() {
+        return 0;
+    }
 }
