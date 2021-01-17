@@ -2,21 +2,21 @@ package item;
 
 import behaviours.ISell;
 
-public class SheetMusic implements ISell {
+public class ViolinStrings implements ISell {
 
-    private String songName;
+    private String make;
 
     private double buyingPrice;
     private double sellingPrice;
 
-    public SheetMusic(String songName, double buyingPrice, double sellingPrice) {
-        this.songName = songName;
+    public ViolinStrings(String make, double buyingPrice, double sellingPrice) {
+        this.make = make;
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
     }
 
-    public String getSongName() {
-        return songName;
+    public String getMake() {
+        return make;
     }
 
     public double getBuyingPrice() {

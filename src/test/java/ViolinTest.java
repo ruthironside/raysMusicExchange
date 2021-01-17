@@ -1,4 +1,4 @@
-
+import instrument.InstrumentType;
 import instrument.strings.Violin;
 
 import org.junit.Before;
@@ -12,8 +12,7 @@ public class ViolinTest {
 
     @Before
     public void setUp() {
-        violin = new Violin("Wood", "Brown", "String", 4);
-
+        violin = new Violin("Wood", "Brown", InstrumentType.STRINGS, 4);
     }
 
     @Test
@@ -28,7 +27,7 @@ public class ViolinTest {
 
     @Test
     public void violinHasType() {
-        assertEquals("String", violin.getType());
+        assertEquals(InstrumentType.STRINGS, violin.getInstrumentType());
     }
 
     @Test

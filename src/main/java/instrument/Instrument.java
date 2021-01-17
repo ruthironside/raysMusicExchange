@@ -10,16 +10,17 @@ public abstract class Instrument implements IPlay, ISell {
     private String type;
     private double buyingPrice;
     private double sellingPrice;
+    private InstrumentType instrumentType;
 
 
-    public Instrument(String material, String colour, String type) {
+    public Instrument(String material, String colour, InstrumentType instrumentType) {
         this.material = material;
         this.colour = colour;
         this.type = type;
         this.buyingPrice = buyingPrice;
         this.sellingPrice = sellingPrice;
+        this.instrumentType = instrumentType;
     }
-
 
     public String getMaterial() {
         return material;
@@ -29,8 +30,8 @@ public abstract class Instrument implements IPlay, ISell {
         return colour;
     }
 
-    public String getType() {
-        return type;
+    public InstrumentType getInstrumentType() {
+        return this.instrumentType;
     }
 
     public String playTune(String tune) {

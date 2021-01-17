@@ -1,8 +1,10 @@
 package instrument.strings;
 
+import instrument.InstrumentType;
+
 public class Cello extends Strings{
-    public Cello(String material, String colour, String type, int numberOfStrings) {
-        super(material, colour, type, numberOfStrings);
+    public Cello(String material, String colour, InstrumentType instrumentType, int numberOfStrings) {
+        super(material, colour, instrumentType, numberOfStrings);
     }
 
     public String playInstrument(String play) {

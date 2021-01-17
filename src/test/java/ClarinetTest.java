@@ -1,3 +1,4 @@
+import instrument.InstrumentType;
 import instrument.woodwind.Clarinet;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class ClarinetTest {
 
     @Before
     public void setUp() {
-        clarinet = new Clarinet("Plastic", "Black", "Woodwind", 17 );
+        clarinet = new Clarinet("Plastic", "Black", InstrumentType.WOODWIND, 17 );
     }
 
     @Test
@@ -25,7 +26,7 @@ public class ClarinetTest {
 
     @Test
     public void clarinetHasType() {
-        assertEquals("Woodwind", clarinet.getType());
+        assertEquals(InstrumentType.WOODWIND, clarinet.getInstrumentType());
     }
 
     @Test

@@ -1,4 +1,4 @@
-import behaviours.ISell;
+import instrument.InstrumentType;
 import instrument.woodwind.Clarinet;
 import item.SheetMusic;
 import org.junit.Before;
@@ -16,7 +16,7 @@ public class ShopTest {
     @Before
     public void setUp() {
         stock = new Shop();
-        clarinet = new Clarinet("Plastic", "Black", "Woodwind", 17);
+        clarinet = new Clarinet("Plastic", "Black", InstrumentType.WOODWIND, 17);
         sheetMusic = new SheetMusic("Twinkle Twinkle Little Star", 3, 5);
     }
 

@@ -1,3 +1,4 @@
+import instrument.InstrumentType;
 import instrument.brass.Tuba;
 import org.junit.Before;
 import org.junit.Test;
@@ -10,7 +11,7 @@ public class TubaTest {
 
     @Before
     public void setUp() {
-        tuba = new Tuba("Metal", "Gold", "Brass", 17 );
+        tuba = new Tuba("Metal", "Gold", InstrumentType.BRASS, 17 );
     }
 
     @Test
@@ -25,7 +26,7 @@ public class TubaTest {
 
     @Test
     public void tubaHasType() {
-        assertEquals("Brass", tuba.getType());
+        assertEquals(InstrumentType.BRASS, tuba.getInstrumentType());
     }
 
 
